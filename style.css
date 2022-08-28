@@ -1,21 +1,69 @@
-/*Reset*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Default*/
 html{
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 
 body{
+  background-color: #707070;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  color: white;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-size: 1.6rem;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  width: 20rem;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  cursor: pointer;
+  background-color: #d0d0d0;
+  width: 8rem;
+  height: 4rem;
+  border-radius: 5rem;
+  display: inline-block;
+  margin: 0 1.5rem 0 1.5rem;
+  position: relative;
+}
+
+.toggle:checked + .label {
+  background-color: #AAA7F2;
+}
+
+.ball {
+  background-color: #ffffff;
+  height: 3.4rem;
+  width: 3.4rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: .3rem;
+  left: .3rem;
+  align-items: center;
+  justify-content: center;
 }
